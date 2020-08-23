@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id = "demo"></p>
+</body>
+</html>
+<script>
+    let num = [2,4,6,8,10,12,14,16,18,20];
+    var over10 = num.filter(Function);
+    document.getElementById("demo").innerHTML = over10;
+    function Function(value) {
+        return value > 10;
+    }
+</script>

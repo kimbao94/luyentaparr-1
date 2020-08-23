@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Các số nguyên âm trong mảng: <span id="demo"></span></p>
+</body>
+</html>
+<script>
+    let arr = []
+    let n = parseInt(prompt("nhập số phần tử"));
+    for (let i = 0; i < n; i++) {
+        arr[i] = parseInt(prompt("Nhập phần tử thứ " + (i + 1)));
+    }
+    let negative = arr.filter(Function);
+    function Function(value) {
+        return value < 0;
+    }
+    document.getElementById("demo").innerHTML = negative;
+</script>

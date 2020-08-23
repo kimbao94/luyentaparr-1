@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let arr = []
+    let n = parseInt(prompt("nhập số phần tử"));
+    for (let i = 0; i < n; i++) {
+        arr[i] = parseInt(prompt("Nhập phần tử thứ " + (i + 1)));
+    }
+    document.write("các phần tử đã nhập là: " + arr + "<br>");
+    for (let k = 0; k < arr.length; k++) {
+        let max = arr[k];
+        for (let j = k + 1; j < arr.length; j++) {
+            if (arr[j] > max) {
+                max = arr[j]
+            }
+        }
+        arr[arr.indexOf(max)] = arr[k];
+        arr[k] = max;
+    }
+    document.write("Mảng sau khi sắp xếp là: " + arr)
+</script>

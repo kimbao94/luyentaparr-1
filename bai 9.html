@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+</html>
+<script>
+    let a = [];
+    let b = [];
+    let c = [];
+    let num = 10;
+    for (let i = 0; i < num; i++) {
+        a[i] = parseInt(prompt("nhap so nguyen cho mang a"));
+    }
+    for (let i = 0; i < num; i++) {
+        b[i] = parseInt(prompt("nhap so nguyen cho mang b"));
+    }
+    document.write("mảng a là: " + a + "<br>");
+    document.write("mảng a là: " + b + "<br>");
+    c = a.concat(b);
+    document.write("mảng c là: " + c + "<br>");
+</script>
